@@ -1,0 +1,8 @@
+.wrapper {
+    padding: 10vh 15vw;
+    background-color: var(--brightBlue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

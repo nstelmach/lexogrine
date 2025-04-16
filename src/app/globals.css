@@ -1,13 +1,11 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --white: rgba(255, 255, 255, 1);
+  --gray: rgba(21, 20, 57, 0.4);
+  --darkBlue: rgba(30, 14, 98, 1);
+  --turquoise: rgba(37, 218, 197, 1);
+  --pink: rgba(233, 58, 125, 1);
+  --darkGrey: rgba(235, 234, 237, 1);
+  --brightBlue: rgba(47, 24, 147, 1);
 }
 
 html,
@@ -17,9 +15,7 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: DM Sans, Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

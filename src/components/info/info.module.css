@@ -1,0 +1,35 @@
+.heading2 {
+    font-weight: 700;
+    font-size: 3.5em;
+    color: var(--white);
+    line-height: 70px;
+    letter-spacing: -1px;
+}
+
+.heading5 {
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--white);
+    line-height: 32px;
+}
+
+.button {
+    width: 157px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: var(--pink);
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--white);
+    line-height: 26px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 427px;
+    gap: 45px
+}
+
