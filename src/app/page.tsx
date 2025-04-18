@@ -9,10 +9,8 @@ export default function Home() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
-    <div>
-      <main className={styles.main}>
-        {isLoggedIn ? <Pricing /> : <SignupPage />}
-      </main>
-    </div>
+    <main className={styles.main}>
+      {isLoggedIn ? <Pricing /> : <SignupPage />}
+    </main>
   );
 }

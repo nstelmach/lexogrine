@@ -1,16 +1,18 @@
-.heading2 {
+.title {
     font-weight: 700;
-    font-size: 3.5em;
+    font-size: 56px;
     color: var(--white);
     line-height: 70px;
     letter-spacing: -1px;
+
 }
 
-.heading5 {
+.subtitle {
     font-weight: 500;
     font-size: 22px;
     color: var(--white);
     line-height: 32px;
+    max-width: 360px;
 }
 
 .button {
@@ -33,3 +35,27 @@
     gap: 45px
 }
 
+@media (max-width: 1200px) {
+    .wrapper {
+        align-items: center;
+    }
+    .subtitle {
+        text-align: center;
+    }
+    .title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        align-items: center;
+    }
+    .subtitle {
+        text-align: center;
+    }
+    .title {
+        font-size: 36px;
+        line-height: 48px;
+    }
+}

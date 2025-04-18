@@ -7,3 +7,10 @@
     gap: 10vw;
     width: 100%;
 }
+
+@media (max-width: 1200px) {
+    .wrapper {
+        flex-direction: column;
+    }
+}
+

@@ -4,9 +4,11 @@ import styles from "./signup.module.css";
 
 export default function SignupPage() {
   return (
-    <div className={styles.wrapper}>
-      <NavBar />
-      <MainContent />
+    <div className={styles.page}>
+      <div className={styles.wrapper}>
+        <NavBar />
+        <MainContent />
+      </div>
     </div>
   );
 }

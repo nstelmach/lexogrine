@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px 60px;
+    padding: 2.5em 3.75em;
     gap: 30px;
     color: var(--darkBlue);
     max-width: 400px;
@@ -51,6 +51,7 @@
     line-height: 26px;
     color: var(--gray);
     text-align: center;
+    max-width: 250px;
 }
 
 .darkDescription {

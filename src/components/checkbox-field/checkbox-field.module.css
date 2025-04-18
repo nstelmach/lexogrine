@@ -1,0 +1,50 @@
+.checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: var(--white);
+    border-color: var(--darkGrey);
+    border-width: 2px;
+}
+
+.iconWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    position: absolute;
+    pointer-events: none;
+    top: 6px;
+    left: 6px;
+}
+
+.icon path {
+    fill: var(--darkBlue);
+}
+
+.checkbox:checked  {
+    background-color: var(--turquoise);
+    border-width: 0;
+    z-index: 0;
+}
+
+.checkboxWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.label {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--gray);
+    line-height: 26px;
+}

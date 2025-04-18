@@ -5,6 +5,7 @@
     letter-spacing: -0.4px;
     color: var(--darkBlue);
     text-align: center;
+    max-width: 550px;
 }
 
 .subtitle {
@@ -12,6 +13,7 @@
     font-size: 16px;
     line-height: 26px;
     color: var(--gray);
+    text-align: center;
 }
 
 .wrapper {
@@ -22,11 +24,25 @@
     padding: 9vh 10vw;
 }
 
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .wrapper {
+        padding: 8vh 6vw;
+    }
+}
+
 .cardsWrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     margin-top: 70px;
+}
+
+@media (max-width: 1024px) {
+    .cardsWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
 }
 
 .titleWrapper {

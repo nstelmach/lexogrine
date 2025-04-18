@@ -34,7 +34,7 @@ export const PricingItem = ({ id, title, price, theme }: PricingItemProps) => {
           const isVisible = value.includes(id);
           return (
             <div key={key} className={styles.featureWrapper}>
-              <Icon className={!isVisible && styles.icon} />
+              <Icon className={!isVisible ? styles.icon : undefined} />
               <p className={`${styles.feature} ${!isVisible && styles.fade}`}>
                 {key}
               </p>
