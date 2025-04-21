@@ -1,0 +1,18 @@
+.card {
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: var(--darkGrey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5em 3.75em;
+    gap: 30px;
+    color: var(--darkBlue);
+    max-width: 400px;
+}
+
+.darkCard {
+    background-color: var(--brightBlue);
+    color: var(--white);
+}
