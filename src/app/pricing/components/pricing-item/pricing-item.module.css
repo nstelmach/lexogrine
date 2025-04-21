@@ -1,0 +1,22 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: 200px;
+    border-width: 2px;
+    border-color: var(--darkGrey);
+    color: var(--darkBlue);
+}
+
+.darkButton {
+    background-color: var(--turquoise);
+    border-color: var(--turquoise);
+    color: var(--white);
+}
+
+
+

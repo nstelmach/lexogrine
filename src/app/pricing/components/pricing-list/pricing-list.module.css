@@ -1,0 +1,15 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 70px;
+}
+
+@media (max-width: 1024px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
