@@ -1,4 +1,4 @@
-.inputWrapper {
+.wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,11 +8,10 @@
 
 .button {
     width: 330px;
-    height: 50px;
-    border-radius: 100px;
     background-color: rgba(72, 43, 231, 1);
     color: var(--white);
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 26px;
+}
+
+.button:disabled {
+    opacity: 0.3;
 }
