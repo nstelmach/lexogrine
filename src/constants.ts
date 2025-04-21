@@ -26,7 +26,6 @@ export const PREDEFINED_RESPONSES: ResponseItem[] = [
     response: {
       success: false,
       error: "This email domain is blocked.",
-      field: "email",
     },
   },
 ];

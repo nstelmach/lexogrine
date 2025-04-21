@@ -5,7 +5,6 @@ import InputField from "@/components/input-field/input-field";
 import CheckboxField from "@/components/checkbox-field/checkbox-field";
 import { useAuth } from "@/context/AuthContext";
 import { toast } from "react-toastify";
-import { motion } from "motion/react";
 import { PREDEFINED_RESPONSES } from "@/constants";
 import { SubmitHandler, useForm } from "react-hook-form";
 import Button from "@/components/button/button";
@@ -22,7 +21,7 @@ export default function SignupForm() {
     resolver: zodResolver(Signup),
   });
   const { login } = useAuth();
-  const isChecked = watch("terms");
+  const isChecked = watch("terms") as SignupInput["terms"];
 
   const registeredEmail = register("email");
   const registeredPassword = register("password");
@@ -56,24 +55,28 @@ export default function SignupForm() {
       // Login user
       if (response.success) {
         toast.success("Signed up successfully!");
-        login();
+        login({ email: data.email });
       } else {
         toast.error(response.error);
       }
     } catch (error) {
-      toast.error(
-        error.message || "An error occurred during signup. Please try again.",
-      );
+      if (error instanceof Error) {
+        toast.error(
+          error.message || "An error occurred during signup. Please try again.",
+        );
+      } else {
+        toast.error("An unexpected error occurred. Please try again.");
+      }
       console.error(error);
     }
   };
 
   return (
-    <motion.form
+    <form
       onSubmit={handleSubmit(onSubmit)}
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: 20 }}
+      // initial={{ opacity: 0, y: -20 }}
+      // animate={{ opacity: 1, y: 0 }}
+      // exit={{ opacity: 0, y: 20 }}
     >
       <div className={styles.wrapper}>
         <InputField
@@ -102,6 +105,6 @@ export default function SignupForm() {
         label="Sign In"
         className={styles.button}
       />
-    </motion.form>
+    </form>
   );
 }

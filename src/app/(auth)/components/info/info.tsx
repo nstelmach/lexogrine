@@ -2,7 +2,7 @@ import styles from "./info.module.css";
 import Button from "@/components/button/button";
 import Typography from "@/components/typography/typography";
 
-export const Info = () => {
+export default function Info() {
   return (
     <div className={styles.wrapper}>
       <Typography as="h2" variant="xxlarge" className={styles.title}>
@@ -15,4 +15,4 @@ export const Info = () => {
       <Button type="button" label="Learn More" className={styles.button} />
     </div>
   );
-};
+}

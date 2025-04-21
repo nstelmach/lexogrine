@@ -1,5 +1,4 @@
 import styles from "./nav-item.module.css";
-import { motion } from "motion/react";
 import Typography from "@/components/typography/typography";
 
 interface NavItemProps {
@@ -9,10 +8,10 @@ interface NavItemProps {
 
 export default function NavItem({ title, active }: NavItemProps) {
   return (
-    <motion.div
-      initial={{ rotate: 0 }}
-      whileHover={{ rotate: 360 }}
-      transition={{ duration: 0.5 }}
+    <div
+    // initial={{ rotate: 0 }}
+    // whileHover={{ rotate: 360 }}
+    // transition={{ duration: 0.5 }}
     >
       <Typography
         as="p"
@@ -21,6 +20,6 @@ export default function NavItem({ title, active }: NavItemProps) {
       >
         {title}
       </Typography>
-    </motion.div>
+    </div>
   );
 }

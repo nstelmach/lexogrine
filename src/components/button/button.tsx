@@ -1,7 +1,7 @@
 import styles from "./button.module.css";
-import { Loader } from "lucide-react";
-import { motion } from "motion/react";
+
 import { JSX } from "react";
+import { Loader } from "lucide-react";
 
 interface ButtonProps {
   disabled?: boolean;
@@ -24,10 +24,10 @@ export default function Button({
 }: ButtonProps) {
   return (
     // Preventing button abuse
-    <motion.button
-      initial={{ opacity: 1, scale: 1 }}
-      whileHover={{ opacity: 0.8, scale: 1.1 }}
-      transition={{ duration: 0.3 }}
+    <button
+      // initial={{ opacity: 1, scale: 1 }}
+      // whileHover={{ opacity: 0.8, scale: 1.1 }}
+      // transition={{ duration: 0.3 }}
       type={type}
       className={`${styles.button} ${className}`}
       disabled={disabled || false}
@@ -35,6 +35,6 @@ export default function Button({
     >
       <>{icon}</>
       <>{isLoading ? <Loader /> : label}</>
-    </motion.button>
+    </button>
   );
 }

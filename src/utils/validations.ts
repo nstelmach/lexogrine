@@ -15,7 +15,7 @@ export const password = z
   })
   .transform((str) => str.trim());
 
-export const terms = z.custom((val) => val === true, {
+export const terms = z.boolean().refine((val) => val, {
   message: "Terms must be accepted",
 });
 

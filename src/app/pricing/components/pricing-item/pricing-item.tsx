@@ -1,6 +1,6 @@
 import styles from "./pricing-item.module.css";
-import Features from "@/app/pricing/components/features/features";
 import PricingCard from "@/app/pricing/components/pricing-card/pricing-card";
+import Features from "@/app/pricing/components/features/features";
 import Button from "@/components/button/button";
 
 interface PricingItemProps {
@@ -23,7 +23,7 @@ export default function PricingItem({
       <Button
         type="button"
         label="Start Free Trial"
-        className={`${styles.button} ${theme === "dark" && styles.darkButton}`}
+        className={`${styles.button} ${theme === "dark" ? styles.darkButton : undefined}`}
       />
     </div>
   );

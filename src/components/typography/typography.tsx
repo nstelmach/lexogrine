@@ -2,7 +2,7 @@ import { PropsWithChildren } from "react";
 import styles from "./typography.module.css";
 
 type TypographyProps = {
-  variant?: "base" | "small" | "xxlarge" | "xlarge" | "base2";
+  variant?: "base" | "small" | "large" | "xxlarge" | "xlarge" | "base2";
   as?: "p" | "h1" | "h2" | "h3" | "h4" | "h5";
   className?: string;
 };
