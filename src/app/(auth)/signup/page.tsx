@@ -1,6 +1,6 @@
-import { NavBar } from "@/components/nav-bar/nav-bar";
-import { MainContent } from "@/components/main-content/main-content";
-import styles from "./signup.module.css";
+import styles from "./page.module.css";
+import NavBar from "@/components/navigation/nav-bar/nav-bar";
+import MainContent from "@/app/(auth)/components/main-content/main-content";
 
 export default function SignupPage() {
   return (

@@ -1,0 +1,40 @@
+.card {
+    border-radius: 10px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    padding: 60px;
+}
+
+.title {
+    letter-spacing: -0.4px;
+    color: var(--darkBlue);
+    margin-bottom: 10px;
+}
+
+.divider {
+    color: var(--gray);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 348px;
+    opacity: 0.9;
+}
+
+.divider::before, .divider::after {
+    flex: 1;
+    content: '';
+    background-color: var(--darkGrey);
+    border-width: 1px;
+    margin: 10px;
+}
+
+.button {
+    width: 330px;
+    background-color: rgba(29, 161, 242, 1);
+    color: var(--white);
+}
+
