@@ -1,0 +1,51 @@
+@media (max-width: 480px) {
+    .menuWrapper {
+        width: 100vw;
+        height: 100px;
+        position: fixed;
+        top: 0;
+        z-index: 50;
+        background-color: var(--brightBlue);
+    }
+
+    .menu {
+        color: var(--white);
+        font-size: 24px;
+        position: fixed;
+        top: 30px;
+        left: 30px;
+    }
+}
+
+.menuWrapper {
+   display: none;
+}
+
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: var(--darkBlue);
+
+}
+
+.icon {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 24px;
+    color: var(--white);
+}
+
+.itemsWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
