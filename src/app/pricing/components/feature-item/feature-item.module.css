@@ -1,0 +1,28 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width: 100%
+}
+
+.icon {
+    color:  var(--turquoise);
+    width: 16px;
+    stroke-width: 3;
+}
+
+.hiddenIcon {
+    color:  var(--white);
+    width: 16px;
+    stroke-width: 3;
+}
+
+.feature {
+    color: var(--gray);
+}
+
+.fade {
+    color: var(--darkGrey);
+}
