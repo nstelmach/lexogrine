@@ -1,0 +1,35 @@
+.base {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.base2 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.small {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.large {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+}
+
+.xlarge {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 52px;
+}
+
+.xxlarge {
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 70px;
+}
