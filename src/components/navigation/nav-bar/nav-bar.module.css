@@ -1,0 +1,32 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    width: 100%;
+}
+
+.itemsWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
