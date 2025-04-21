@@ -1,4 +1,4 @@
-import { FeatureMap, PriceItem } from "@/types";
+import { FeatureMap, NavItem, PriceItem, ResponseItem } from "@/types";
 
 export const PRICING_LIST: PriceItem[] = [
   { id: "start", title: "start", price: "19", theme: "light" },
@@ -12,3 +12,28 @@ export const FEATURES: FeatureMap = {
   "Social integrations": ["enterprise", "enterprise+"],
   "Advanced client billing": ["enterprise+"],
 };
+
+// Those are predefined responses for signing up.
+export const PREDEFINED_RESPONSES: ResponseItem[] = [
+  {
+    email: "success@example.com",
+    password: "password123",
+    response: { success: true },
+  },
+  {
+    email: "blocked@example.com",
+    password: "password123",
+    response: {
+      success: false,
+      error: "This email domain is blocked.",
+      field: "email",
+    },
+  },
+];
+
+export const NAV_ITEMS_MAP: NavItem[] = [
+  { name: "Overview", active: true },
+  { name: "Prices" },
+  { name: "Blog" },
+  { name: "Feedback" },
+];

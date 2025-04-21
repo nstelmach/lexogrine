@@ -1,16 +1,17 @@
 "use client";
 
 import styles from "./page.module.css";
-import { useState } from "react";
-import SignupPage from "@/app/signup/page";
-import { Pricing } from "@/components/pricing/pricing";
+import SignupPage from "@/app/(auth)/signup/page";
+import { useAuth } from "@/context/AuthContext";
+import PricingPage from "@/app/pricing/page";
 
 export default function Home() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const { isLoggedIn } = useAuth();
 
+  //If user is logged in, displaying Pricing Page
   return (
     <main className={styles.main}>
-      {isLoggedIn ? <Pricing /> : <SignupPage />}
+      {isLoggedIn ? <PricingPage /> : <SignupPage />}
     </main>
   );
 }
