@@ -23,3 +23,7 @@
     padding: 20px;
     line-height: 26px;
 }
+
+.input::placeholder {
+    color: var(--gray);
+}

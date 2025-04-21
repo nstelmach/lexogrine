@@ -7,9 +7,11 @@
 
 .button {
     width: 200px;
+    border-style: solid;
     border-width: 2px;
     border-color: var(--darkGrey);
     color: var(--darkBlue);
+    background-color: var(--white);
 }
 
 .darkButton {

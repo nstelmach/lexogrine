@@ -1,4 +1,5 @@
 .card {
+    border-style: solid;
     border-radius: 10px;
     border-width: 2px;
     border-color: var(--darkGrey);
@@ -12,7 +13,14 @@
     max-width: 400px;
 }
 
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .card {
+        padding: 2.5em 3.25em;
+    }
+}
+
 .darkCard {
     background-color: var(--brightBlue);
     color: var(--white);
+    border-color:  var(--brightBlue);
 }

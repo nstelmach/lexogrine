@@ -1,5 +1,5 @@
 "use client";
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import styles from "./burger-menu.module.css";
 import { MenuIcon, XIcon } from "lucide-react";
 import NavItems from "@/components/navigation/nav-items/nav-items";
@@ -14,23 +14,23 @@ export default function BurgerMenu() {
   };
 
   return (
-    <Fragment>
+    <div className={styles.wrapper}>
       <div className={styles.menuWrapper}>
         <Button
           type="button"
-          icon={<MenuIcon />}
+          icon={<MenuIcon width={50} height={50} />}
           className={styles.menu}
           onClick={onOpenMenuHandler}
         />
       </div>
       <div>
         {isOpen && (
-          <div className={styles.wrapper}>
+          <div className={styles.contentWrapper}>
             <Button
               type="button"
               className={styles.icon}
               onClick={onOpenMenuHandler}
-              icon={<XIcon />}
+              icon={<XIcon width={40} height={40} />}
             />
             <div className={styles.itemsWrapper}>
               <AppTitle />
@@ -39,6 +39,6 @@ export default function BurgerMenu() {
           </div>
         )}
       </div>
-    </Fragment>
+    </div>
   );
 }

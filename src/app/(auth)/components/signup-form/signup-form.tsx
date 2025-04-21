@@ -27,8 +27,6 @@ export default function SignupForm() {
   const registeredPassword = register("password");
   const registeredTerms = register("terms");
 
-  //check RWD and styles
-
   const onSubmit: SubmitHandler<SignupInput> = async (data) => {
     try {
       const response = await new Promise<Response>((resolve, reject) => {
@@ -69,8 +67,8 @@ export default function SignupForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <div className={styles.wrapper}>
+    <form className={styles.wrapper} onSubmit={handleSubmit(onSubmit)}>
+      <div className={styles.inputWrapper}>
         <InputField
           type="email"
           placeholder="Your email"

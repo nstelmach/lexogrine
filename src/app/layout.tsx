@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body className={dmSans.className}>
+      <body className={dmSans.className} suppressHydrationWarning={true}>
         <AuthProvider>
           <ToastContainer />
           {children}

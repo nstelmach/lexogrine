@@ -7,8 +7,7 @@
 }
 
 .dollar {
-    vertical-align: top;
-    height: 100%;
+    align-self: flex-start;
 }
 
 .price {

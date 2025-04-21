@@ -10,7 +10,9 @@ export default function Card({
   theme,
 }: PropsWithChildren<CardProps>) {
   return (
-    <div className={`${styles.card} ${theme === "dark" && styles.darkCard}`}>
+    <div
+      className={`${styles.card} ${theme === "dark" ? styles.darkCard : undefined}`}
+    >
       {children}
     </div>
   );
