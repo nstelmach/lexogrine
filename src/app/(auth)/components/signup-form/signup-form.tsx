@@ -27,8 +27,6 @@ export default function SignupForm() {
   const registeredPassword = register("password");
   const registeredTerms = register("terms");
 
-  //add instructions in readme
-  //deploy
   //check RWD and styles
   //add animations
 
