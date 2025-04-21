@@ -1,5 +1,8 @@
+"use client";
+
 import styles from "./nav-item.module.css";
 import Typography from "@/components/typography/typography";
+import { motion } from "motion/react";
 
 interface NavItemProps {
   title: string;
@@ -8,11 +11,7 @@ interface NavItemProps {
 
 export default function NavItem({ title, active }: NavItemProps) {
   return (
-    <div
-    // initial={{ rotate: 0 }}
-    // whileHover={{ rotate: 360 }}
-    // transition={{ duration: 0.5 }}
-    >
+    <motion.div whileHover={{ x: 5, y: -5 }}>
       <Typography
         as="p"
         className={`${styles.title} ${active && styles.active}`}
@@ -20,6 +19,6 @@ export default function NavItem({ title, active }: NavItemProps) {
       >
         {title}
       </Typography>
-    </div>
+    </motion.div>
   );
 }

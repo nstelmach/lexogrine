@@ -1,4 +1,6 @@
-import React, { InputHTMLAttributes } from "react";
+"use client";
+import { InputHTMLAttributes } from "react";
+import { motion } from "motion/react";
 
 type InputProps = {
   placeholder?: string;
@@ -15,9 +17,7 @@ export default function Input({
   ...props
 }: InputProps) {
   return (
-    <div
-    // whileHover={{ scale: 1.05 }}
-    >
+    <motion.div whileHover={{ scale: 1.05 }}>
       <input
         placeholder={placeholder}
         type={type}
@@ -26,6 +26,6 @@ export default function Input({
         required
         {...props}
       />
-    </div>
+    </motion.div>
   );
 }

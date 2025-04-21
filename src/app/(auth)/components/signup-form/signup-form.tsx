@@ -28,7 +28,6 @@ export default function SignupForm() {
   const registeredTerms = register("terms");
 
   //check RWD and styles
-  //add animations
 
   const onSubmit: SubmitHandler<SignupInput> = async (data) => {
     try {
@@ -70,12 +69,7 @@ export default function SignupForm() {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit(onSubmit)}
-      // initial={{ opacity: 0, y: -20 }}
-      // animate={{ opacity: 1, y: 0 }}
-      // exit={{ opacity: 0, y: 20 }}
-    >
+    <form onSubmit={handleSubmit(onSubmit)}>
       <div className={styles.wrapper}>
         <InputField
           type="email"
