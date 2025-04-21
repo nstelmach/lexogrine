@@ -1,0 +1,25 @@
+.articleWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.article {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--gray);
+}
+
+.sign {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--turquoise);
+    cursor: pointer;
+}
+
+
+

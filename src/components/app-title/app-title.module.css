@@ -1,0 +1,10 @@
+.title {
+    letter-spacing: -0.29px;
+    color: var(--white);
+}
+
+@media (max-width: 480px) {
+    .title {
+        margin: 30px;
+    }
+}
